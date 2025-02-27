@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+import os
+import sys
+
+# Get the directory where this script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+# Path to the main script
+main_script = os.path.join(script_dir, "one_video_transcribe.py")
+
+# Import and run the main script
+with open(main_script) as f:
+    exec(f.read()) 
